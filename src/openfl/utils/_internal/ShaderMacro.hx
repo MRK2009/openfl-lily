@@ -65,6 +65,7 @@ class ShaderMacro
 					Defaults to false to prevent converting user-defined GLSL.
 				**/
 				var shouldProcess = meta.params.length > 1 && cast(meta.params[1].getValue(), Bool);
+				
 				switch (meta.name)
 				{
 					case "glFragmentSource", ":glFragmentSource":
@@ -174,6 +175,7 @@ class ShaderMacro
 						Defaults to false to prevent converting user-defined GLSL.
 					**/
 					var shouldProcess = meta.params.length > 1 && cast(meta.params[1].getValue(), Bool);
+					
 					switch (meta.name)
 					{
 						case "glFragmentSource", ":glFragmentSource":
